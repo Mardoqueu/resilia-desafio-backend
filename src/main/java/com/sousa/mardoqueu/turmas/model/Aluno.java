@@ -10,7 +10,7 @@ import java.util.List;
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(nullable = false)
     private String nome;
@@ -26,11 +26,19 @@ public class Aluno {
 
     // construtores, getters e setters
 
-    public Long getId() {
+
+    public Aluno(Integer id, String nome, String cpf, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
