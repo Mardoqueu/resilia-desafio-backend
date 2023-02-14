@@ -35,6 +35,10 @@ public class Turma {
         this.matriculas = matriculas;
     }
 
+    public Turma() {
+
+    }
+
     public Long getId() {
         return id;
     }
