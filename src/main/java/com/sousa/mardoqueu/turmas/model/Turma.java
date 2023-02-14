@@ -9,7 +9,7 @@ import java.util.List;
 public class Turma {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(nullable = false)
     private String nome;
@@ -26,7 +26,7 @@ public class Turma {
     @OneToMany(mappedBy = "turma")
     private List<Matricula> matriculas;
 
-    public Turma(Long id, String nome, String curso, LocalDate dataInicio, LocalDate dataEncerramento, List<Matricula> matriculas) {
+    public Turma(Integer id, String nome, String curso, LocalDate dataInicio, LocalDate dataEncerramento) {
         this.id = id;
         this.nome = nome;
         this.curso = curso;
@@ -35,15 +35,16 @@ public class Turma {
         this.matriculas = matriculas;
     }
 
-    public Turma() {
+    public Turma(){
 
     }
 
-    public Long getId() {
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
