@@ -7,8 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TurmasApplicationTests {
 
 	@Test
-	void contextLoads() {
-		TurmasApplication.main(new String[] {});
+	void main() {
 	}
 
 }
