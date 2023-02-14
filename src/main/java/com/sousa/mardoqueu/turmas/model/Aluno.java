@@ -34,6 +34,10 @@ public class Aluno {
         this.email = email;
     }
 
+    public Aluno() {
+
+    }
+
     public Integer getId() {
         return id;
     }
