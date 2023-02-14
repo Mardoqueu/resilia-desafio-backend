@@ -8,6 +8,7 @@ class TurmasApplicationTests {
 
 	@Test
 	void contextLoads() {
+		TurmasApplication.main(new String[] {});
 	}
 
 }
