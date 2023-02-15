@@ -18,6 +18,14 @@ public class Matricula {
     private Aluno aluno;
 
     // construtores, getters e setters
+    public Matricula(Turma turma, Aluno aluno) {
+        this.turma = turma;
+        this.aluno = aluno;
+    }
+
+    public Matricula() {
+
+    }
 
     public Long getId() {
         return id;
