@@ -73,7 +73,7 @@ class TurmaServiceTest {
 
     private void startTurma(){
 
-        turma = new Turma(ID, NOME, CURSO, dataAtualEsperada,  dataAtualEsperada );
+        turma = new Turma(ID, NOME, CURSO, dataAtualEsperada,  dataAtualEsperada);
 
 
     }
